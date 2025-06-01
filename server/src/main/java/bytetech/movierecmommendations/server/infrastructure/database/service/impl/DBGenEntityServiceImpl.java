@@ -74,11 +74,20 @@ public class DBGenEntityServiceImpl implements DBGenEntityService {
                     new Category("Romance", "Lãng mạn"),
                     new Category("Fantasy", "Giả tưởng"),
                     new Category("Thriller", "Giật gân"),
+                    new Category("Adventure Epic", "Cuộc phiêu lưu sử thi"),
+                    new Category("Epic", "Sử thi"),
+                    new Category("Space Sci-Fi", "Khoa học viễn tưởng vũ trụ"),
                     new Category("Mystery", "Bí ẩn"),
+                    new Category("Time Travel", "Du hành thời gian"),
                     new Category("Animation", "Hoạt hình"),
-                    new Category("CateMana1", "Giả 1"),
+                    new Category("Social Psychology", "Phim Tâm Lý Xã Hội"),
                     new Category("CateMana2", "Convert to Basic Latin"),
-                    new Category("CateMana3", "Convert to Basic Latin")
+                    new Category("Coming-of-age", "sự trưởng thành"),
+                    new Category("Costume Drama", "Phim cổ trang"),
+                    new Category("Holiday Romance", "Kỳ nghỉ lãng mạn"),
+                    new Category("Romantic Comedy", "Hài kịch lãng mạn"),
+                    new Category("Tragic Romance", "Lãng mạn bi kịch"),
+                    new Category("Steamy Romance", "Lãng mạn nóng bỏng")
             );
             categoryRepository.saveAll(categories);
         }
@@ -144,7 +153,7 @@ public class DBGenEntityServiceImpl implements DBGenEntityService {
                     ),
                     new Movie(
                             "Interstellar",
-                            "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
+                            "When Earth becomes uninhabitable in the future, a farmer and ex-NASA pilot, Joseph Cooper, is tasked to pilot a spacecraft, along with a team of researchers, to find a new planet for humans.",
                             "Christopher Nolan",
                             "Matthew McConaughey, Anne Hathaway, Jessica Chastain",
                             2014,
@@ -238,9 +247,107 @@ public class DBGenEntityServiceImpl implements DBGenEntityService {
                             "Tran Thanh, Lan Ngoc, Tien Luat",
                             2024,
                             "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR7rYDstB2Tox9_LxIESL-lVAiwAmV5dHJ4s6qE9ANXuncJfc8h",
+                            "https://www.youtube.com/watch?v=555oiY9RWM4"
+                    ),
+                    new Movie(
+                            "To All the Boys I've Loved Before 1",
+                            "A teenage girl's secret love letters are exposed and wreak havoc on her love life.",
+                            "Susan Johnson",
+                            " Lana Condor, Noah Centineo, Janel Parrish",
+                            2018,
+                            "https://ntvb.tmsimg.com/assets/p15663025_v_h10_aa.jpg?w=1280&h=720",
                             "https://www.youtube.com/watch?v=MtZ_hf7tLxk"
                     ),
-
+                    new Movie(
+                            "Call me by your name",
+                            "It's the summer of 1983, and 17-year-old Elio is spending the days with his family at their villa in Lombardy, Italy. He soon meets Oliver, who's working as an intern for Elio's father. They discover the heady beauty of awakening desire.",
+                            "Luca Guadagnino",
+                            "Timothée Chalamet, Armie Hammer, Michael Stuhlbarg",
+                            2017,
+                            "https://m.media-amazon.com/images/M/MV5BNDk3NTEwNjc0MV5BMl5BanBnXkFtZTgwNzYxNTMwMzI@._V1_.jpg",
+                            "https://www.youtube.com/watch?v=Z9AYPxH5NTM&pp=0gcJCdgAo7VqN5tD"
+                    ),
+                    new Movie(
+                            "Little Women",
+                            "In 19th century Massachusetts, the March sisters--Meg, Jo, Beth, and Amy--on the threshold of womanhood, go through many ups and downs in life and endeavor to make important decisions about their futures.",
+                            "Greta Gerwig",
+                            "Saoirse Ronan, Emma Watson, Florence Pugh",
+                            2019,
+                            "https://upload.wikimedia.org/wikipedia/en/9/9d/Little_Women_%282019_film%29.jpeg",
+                            "https://www.youtube.com/watch?v=AST2-4db4ic"
+                    ),
+                    new Movie(
+                            "After We Collided",
+                            "Based on the 2014 romance novel of the same name, this follows the love life of two young adults.",
+                            "Roger Kumble",
+                            "Josephine Langford, Hero Fiennes Tiffin, Dylan Sprouse",
+                            2020,
+                            "https://m.media-amazon.com/images/M/MV5BMDFmMGYzMGYtNWFkNy00NTFmLWIzNjMtNjhjOWI3NjEyNDE0XkEyXkFqcGc@._V1_.jpg",
+                            "https://www.youtube.com/watch?v=2SvwX3ux_-8"
+                    ),
+                    new Movie(
+                            "Beautiful Disaster",
+                            "College freshman Abby tries to distance herself from her dark past while resisting her attraction to bad boy Travis.\n",
+                            "Roger Kumble",
+                            "Dylan Sprouse, Virginia Gardner, Austin North",
+                            2023,
+                            "https://upload.wikimedia.org/wikipedia/en/9/94/Beautiful_Disaster.jpeg",
+                            "https://www.youtube.com/watch?v=EMK3wy2563g"
+                    ),
+                    new Movie(
+                            "After Ever Happy",
+                            "As a shocking truth about a couple's families emerges, the two lovers discover they are not so different from each other.\n",
+                            "Castille Landon",
+                            "Josephine Langford, Hero Fiennes Tiffin, Louise Lombard",
+                            2022,
+                            "https://upload.wikimedia.org/wikipedia/en/thumb/3/3e/After_Ever_Happy_official_poster.png/250px-After_Ever_Happy_official_poster.png",
+                            "https://www.youtube.com/watch?v=hLQ-5exgctI"
+                    ),
+                    new Movie(
+                            "The Platform 2",
+                            "A thrilling physical journey that allows an approach to the darkness, where it is scary to look. It appeals to the viewer's civil responsibility and forces them to face the limits of their own solidarity.\n",
+                            "Galder Gaztelu-Urrutia",
+                            "Milena Smit, Hovik Keuchkerian, Natalia Tena",
+                            2024,
+                            "https://m.media-amazon.com/images/M/MV5BNzI4YjkyODctMGJmNC00YjBjLTllNjAtNDkxNTJmZjg4MGZkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+                            "https://www.youtube.com/watch?v=UKFMYWNatQM"
+                    ),
+                    new Movie(
+                            "Stranger things season 4",
+                            "Mysteries unravel in a small Midwestern town in the 1980s, involving supernatural forces, secret experiments and one strange girl.",
+                            "Matt Duffer, Ross Duffer",
+                            "Millie Bobby Brown, Finn Wolfhard, Winona Ryder",
+                            2022,
+                            "https://upload.wikimedia.org/wikipedia/en/7/78/Stranger_Things_season_4.jpg",
+                            "https://www.youtube.com/watch?v=sBEvEcpnG7k"
+                    ),
+                    new Movie(
+                            "Dune: Part Two",
+                            "Paul Atreides unites with the Fremen while on a warpath of revenge against the conspirators who destroyed his family. Facing a choice between the love of his life and the fate of the universe, he endeavors to prevent a terrible future.",
+                            "Denis Villeneuve",
+                            "Timothée Chalamet, Zendaya, Rebecca Ferguson",
+                            2024,
+                            "https://upload.wikimedia.org/wikipedia/vi/9/94/Dune_2_VN_poster.jpg",
+                            "https://www.youtube.com/watch?v=kCO-RO3q7U4"
+                    ),
+                    new Movie(
+                            "Reply 1988",
+                            "Five childhood friends, who all live in the same Ssangmundong neighborhood of Seoul in 1988, lean on each other to survive their challenging teen years and set a path for their futures.",
+                            "Shin Won-ho",
+                            "Lee Hyeri, Park Bo-gum, Ryu Jun-yeol",
+                            2015,
+                            "https://occ-0-8407-90.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABQiLySv67Z00six6BhU4PgKg_NXjsV_7gyzO_2FklWxZfb3-ZTCvYbGG8oH3WcDKvMdR3gibmujM2Kp7Wm25ubT4AdlKuHMCSyYj.jpg?r=751",
+                            "https://www.youtube.com/watch?v=c-EMf3JdxUA"
+                    ),
+                    new Movie(
+                            "Lupin",
+                            "Inspired by the adventures of Arsène Lupin, gentleman thief Assane Diop sets out to avenge his father for an injustice inflicted by a wealthy family.\n",
+                            "George Kay",
+                            "Omar Sy, Ludivine Sagnier, Soufiane Guerrab",
+                            2021,
+                            "https://m.media-amazon.com/images/M/MV5BMDJhODQ3ZDEtN2JmMS00Yjk5LTk1ZTUtMzI3YTU0NTNjMjAyXkEyXkFqcGc@._V1_.jpg",
+                            "https://www.youtube.com/watch?v=ga0iTWXCGa0"
+                    ),
                     new Movie(
                             "Come Home, My Children",
                             "The story follows Mr. Son, a single father raising his three daughters—Hue, Thu, and Duong—through the ups and downs of life, highlighting the boundless love within a family.",

@@ -39,7 +39,7 @@ function HomePage() {
         try {
             const response = await UserMovieApi.GetMovieRecommendations();
             console.log("response + {}", response.data);
-            setMovieRecommendation(response.data);
+            setMovieRecommendation(response.data.sort((a, b) => b.rating - a.rating));
         } catch (error) {
             console.error("Lỗi khi lấy kết quả", error);
         }
